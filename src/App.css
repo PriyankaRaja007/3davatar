@@ -1,0 +1,40 @@
+.app {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  background: #f0f0f0;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Canvas styles */
+canvas {
+  width: 100%;
+  height: 100%;
+  touch-action: none;
+  flex: 1;
+  cursor: grab;
+}
+
+canvas:active {
+  cursor: grabbing;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .app {
+    flex-direction: column;
+  }
+  
+  .dress-selector {
+    width: 100%;
+    position: relative;
+    right: 0;
+    top: 0;
+    margin: 0;
+    border-radius: 0;
+    max-height: 50vh;
+    overflow-y: auto;
+  }
+} 
